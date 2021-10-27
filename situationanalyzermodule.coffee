@@ -49,6 +49,7 @@ heartbeat = ->
         digestSituations()
         situationanalyzermodule.ready = true
         budgetManager.updateAvailableBudgets()
+        log "successful heartbeat!"
     catch err
         log "Error in heartbeat!"
         log err.stack
